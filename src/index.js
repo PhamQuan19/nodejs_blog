@@ -28,26 +28,26 @@ app.set('views', path.join(__dirname,'resources/views'));
 
 
 //Routes init: khoi tạo tuyến đường
-// route();
+route(app);
 
-// đường dẫn
-app.get('/', (req, res) => {
-  // res.send('Hello World!')
-  res.render('home');
-});
+// // đường dẫn
+// app.get('/', (req, res) => {
+//   // res.send('Hello World!')
+//   res.render('home');
+// });
 
-app.get('/news', (req, res) => {
-  res.render('news');
-});
+// app.get('/news', (req, res) => {
+//   res.render('news');
+// });
 
-app.get('/search', (req, res) => {
-  res.render('Search');
-});
+// app.get('/search', (req, res) => {
+//   res.render('Search');
+// });
 
-app.post('/search', (req, res) => {
-  console.log(req.body);
-  res.send('');
-});
+// app.post('/search', (req, res) => {
+//   console.log(req.body);
+//   res.send('');
+// });
 
 //127.0.0.1 - localhost
 app.listen(port, () => {
