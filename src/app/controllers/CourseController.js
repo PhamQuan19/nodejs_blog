@@ -40,6 +40,12 @@ class CourseController {
         .catch(next);
         // res.render('courses/edit');
     }
+//[PUT]/course/:id
+    update(req, res, next) {
+        Course.updateOne({_id: req.params.id}, req.body)
+        .then(() =>res.redirect('/me/stored/courses'))
+        .catch(next);
+    }
 
 }
 
